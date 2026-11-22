@@ -47,13 +47,13 @@ The firmware translates user-defined joint angles or Cartesian end-effector targ
 
 | Joint | Function | ESP32 GPIO |
 |---|---|---:|
-| J1 | Base | GPIO 18 |
-| J2 | Shoulder | GPIO 17 |
-| J3 | Elbow | GPIO 16 |
-| J4 | Wrist | GPIO 14 |
-| J5 | Gripper | GPIO 13 |
+| J1 | Base | GPIO 13 |
+| J2 | Shoulder | GPIO 14 |
+| J3 | Elbow | GPIO 27 |
+| J4 | Wrist | GPIO 26 |
+| J5 | Gripper | GPIO 25 |
 
-The pin assignments are defined in the servo controller module and should be updated if the physical wiring changes.
+The pin assignments follow `SERVO_GPIO` in `include/configuration.h` (`{13, 14, 27, 26, 25}` for J1–J5) and should be updated there if the physical wiring changes.
 
 ### Power Supply Considerations
 
