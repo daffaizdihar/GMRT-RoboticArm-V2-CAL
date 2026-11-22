@@ -511,6 +511,21 @@ Open the serial monitor:
 pio device monitor --baud 115200
 ```
 
+### Serial Port (must be adjusted)
+
+`platformio.ini` pins `upload_port` and `monitor_port` to **`COM9`**, which is the author's machine port, not a fixed property of the project. Change both values to the port your ESP32 actually enumerates as before building, uploading, or opening the monitor — otherwise PlatformIO fails with a port-open error:
+
+```ini
+upload_port = COM9
+monitor_port = COM9
+```
+
+- Windows: Device Manager → Ports (COM & LPT), e.g. `COM5`, `COM9`
+- Linux: `/dev/ttyUSB0` or `/dev/ttyACM0`
+- macOS: `/dev/cu.usbserial-*` or `/dev/cu.SLAB_USBtoUART`
+
+Run `pio device list` to see the ports currently attached.
+
 The exact board identifier and library dependencies must match the repository's `platformio.ini` configuration.
 
 ---
