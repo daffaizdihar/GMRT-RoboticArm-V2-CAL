@@ -617,7 +617,25 @@ Future development can build on this foundation through improved motion planning
 
 ---
 
-## 12. Author
+## 12. Design & Blueprints
+
+Design renders and technical drawings of the arm's mechanical layout and electronics packaging. These are design references for the intended build, not fabrication drawings verified against the assembled unit.
+
+### Technical Blueprint
+
+![GMRT Robotic Arm technical blueprint](docs/gmrt-robotic-arm-technical-blueprint.png)
+
+### Engineering Infographic
+
+![GMRT Robotic Arm engineering infographic](docs/gmrt-robotic-arm-engineering-infographic.png)
+
+### Technical Infographic
+
+![GMRT Robotic Arm technical infographic](docs/gmrt-robotic-arm-technical-infographic.png)
+
+---
+
+## 13. Author
 
 **Muhammad Daffa Izdihar**  
 Programmer Division — GMRT Open Recruitment  
